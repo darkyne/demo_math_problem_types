@@ -1,0 +1,77 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    Examples of exercices using the basic math problem type.
+    This allows numerical values, expressions, equations, inequations, functions...
+    But vectors, matrix or intervals require to use the other specific problem types.
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Math
+network_grading: false
+problems:
+    Math1:
+        type: math
+        name: Math example 1
+        header: |-
+            Quelle est la surface d'un cercle de rayon R=9cm ?
+            Exprime la réponse en cm.
+            Une marge de 0.1 est acceptée.
+
+            Solution: pi*81 ou encore 254.469 soit une valeur entre 254.369 et 254.569
+        hints: ''
+        tolerance: 0.1
+        answers:
+        - 81\pi
+    Math2:
+        type: math
+        name: Math example 2
+        header: |-
+            Quelle est le périmètre d'un cercle de rayon R=9cm ?
+            Exprime la réponse en cm.
+            Une marge de 0.1 est acceptée.
+
+            Solution: 18pi ou encore une valeur avoisinant 56.55
+        hints: ''
+        tolerance: 0.1
+        answers:
+        - 18\pi
+    Math3:
+        type: math
+        name: Math example 3
+        header: |-
+            Quelle est la primitive de la fonction f(x)=5x²+yx+3 ?
+
+            Solution: (5/3)*x³+(y/2)*x²+3x
+        hints: ''
+        answers:
+        - \frac{5}{3}x^3+\frac{y}{2}x^2+3x
+    Math4:
+        type: math
+        name: Math example 4
+        header: |-
+            Soit l'équation:
+
+            .. math::
+
+                    \frac{ 5x-13 }{4(x-3)} = \frac{ 2 }{x²-2x-3}
+
+            Ne résoud pas, donne simplement les conditions d'existence.
+            S'il y a plusieurs conditions, rentre chacune via le bouton add answer.
+
+            solution: x!=3 et x!=1
+        hints: ''
+        answers:
+        - x\ne3
+        - x\ne-1
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

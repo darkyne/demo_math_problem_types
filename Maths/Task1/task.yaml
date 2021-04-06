@@ -1,0 +1,169 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |-
+    This task show exercises for all the math problem types, mainly showing format examples.
+
+    These problem types show a little format example near the answer box.
+    On the teacher task edit page, each problem type shows a little text with explanation in addition to the format example via a small button.
+
+    Types are the following:
+
+    **math**: This is the basic problem type that was initially used in the math plugin. Used for general math expressions, numerical values, equations or inequalities. It allows to define an (absolute) tolerance.
+
+    **math_vector**: This is used to encode vectors with format such as a,b,c. Each element must be a mathematical expression wich can include constants, numerical values and variables.
+
+    **math_matrix**: This uses the same principle as vectors but for matrix with format such as a,b:c,d.
+
+    **math_interval**: This is specific for intervals answers like function domains with format such as (0,5]U[10,12]. The symbols [ and ( are respectively for included and excluded.
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: All the math problem types together
+network_grading: false
+problems:
+    Math_matrix:
+        type: math_matrix
+        name: This is a math matrix problem
+        header: |-
+            Enter the
+
+            1,2,3:4,5,6:7,8,9
+
+            matrix !
+        hints: ''
+        answers:
+        - 1,2,3:4,5,6:7,8,9
+    Math_multi_vector:
+        type: math_vector
+        name: This is a math_vector problem with multiple vectors
+        header: |-
+            Enter the 3 following matrix:
+
+            a,b,c,d
+
+            x,2x,y
+
+            1,2,3,4,5,6
+        hints: ''
+        answers:
+        - \left[a,b,c,d\right]
+        - x,2x,y
+        - \left[1,2,3,4,5,6\right]
+    Math_numerical:
+        type: math
+        name: Numerical question
+        header: |
+            What is the area of a circle with a 5cm radius ?
+            The solution is expressed in cm^2.
+            A tolerance of 0.1 is accepted.
+
+            The answer can be encoded as 25π.
+            Since the numerical value would be 78.5398163397 any value with a 0.1 distance will be accepted.
+            So, for example, 78.5 is also valid.
+        hints: ''
+        tolerance: 0.1
+        answers:
+        - 25\pi
+        choices:
+        -   answer: '805'
+            feedback: nice try !
+    Math_vector:
+        type: math_vector
+        name: This is a math_vector problem
+        header: |
+            Enter the 5 firts values of the x_n+1 = 2*x_n starting with value 1.
+
+            The solution is 1,2,4,8,16
+        hints: ''
+        answers:
+        - 1,2,4,8,16
+    math_interval:
+        type: math_interval
+        name: math interval question
+        header: |-
+            Enter the domain of the following function using interval notations:
+
+            :math:`\frac{ x }{ (x-1)(x-2) }`
+
+            The solution is:
+
+            (-∞,0]U(1,2)U(2,∞)
+        hints: ''
+        answers:
+        - \left(-∞,0\right]\cup(1,2)\cup(2,∞)
+    math_multi_matrix:
+        type: math_matrix
+        name: ''
+        header: |-
+            Enter 3 matrix.
+
+            The first one is the 2x2 Identify matrix.
+
+            The second one is the inversion of the following matrix:
+
+                .. math::
+
+                    M = \begin{bmatrix}
+                            1 & 2 \\
+                            3 & 4
+                        \end{bmatrix}
+
+
+
+            The last 3th matrix is N such that N+M = 0
+
+
+            Solutions are:
+
+
+            1,0:0,1
+
+            -2,1:3/2,-1/2
+
+            -1,-2:-3,-4
+        hints: ''
+        answers:
+        - 1,0:0,1
+        - -2,1:3/2,-1/2
+        - -1,-2:-3,-4
+    normal_math:
+        type: math
+        name: Basic math problem
+        header: |-
+            This uses the basic math problem type.
+
+            Find the root(s) of the following function:
+            f(x)=x²+ax-3x-3a
+
+            If you find multiple roots, use the add answer button.
+            You can express you answer in terms of a.
+
+            Solution: 3 and -a
+        hints: ''
+        tolerance: 0.1
+        answers:
+        - '3'
+        - -a
+    test_inequation:
+        type: math
+        name: Inequation example
+        header: |-
+            What is the condition on x for the following expression to be defined ?
+            (x-5) / (x²-7x+10)
+
+
+            Solution: x²-7x+10 = (x-5)(x-2) so the condition is just x != 2
+        hints: ''
+        answers:
+        - x\ne2
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

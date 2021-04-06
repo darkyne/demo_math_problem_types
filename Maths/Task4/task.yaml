@@ -1,0 +1,121 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: Example for math matrix.
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Math matrix
+network_grading: false
+problems:
+    matrix1:
+        type: math_matrix
+        name: Matrix example 1
+        header: |-
+            Ecris la matrice identité 3x3
+
+            Solution: 1,0,0:0,1,0:0,0,1
+        hints: ''
+        answers:
+        - 1,0,0:0,1,0:0,0,1
+    matrix2:
+        type: math_matrix
+        name: Matrix example 2
+        header: |-
+            Soit les matrices suivantes:
+
+                .. math::
+
+                    A = \begin{bmatrix}
+                            2 & 1 \\
+                            2 & 1
+                        \end{bmatrix}
+
+                     B = \begin{bmatrix}
+                            1 & 2 \\
+                            -2 & -4
+                        \end{bmatrix}
+
+            Calculer AB
+
+
+            Solution: 0,0:0,0
+        hints: ''
+        answers:
+        - 0,0:0,0
+    matrix3:
+        type: math_matrix
+        name: ''
+        header: |-
+            Soit les matrices suivantes:
+
+                .. math::
+
+                    A = \begin{bmatrix}
+                            2 & 1 \\
+                            2 & 1
+                        \end{bmatrix}
+
+                     B = \begin{bmatrix}
+                            1 & 2 \\
+                            -2 & -4
+                        \end{bmatrix}
+
+            Calculer BA
+
+
+            Solution: 6,3:-12,-6
+        hints: ''
+        answers:
+        - 6,3:-12,-6
+    matrix4:
+        type: math_matrix
+        name: ''
+        header: |4-
+                Soit la matrice:
+
+                .. math::
+
+                    A = \begin{bmatrix}
+                            2 & -3 \\
+                            1 & -1
+                        \end{bmatrix}
+
+                Calculer l'inverse de A.
+
+
+                Solution: -1,3:-1,2
+        hints: ''
+        answers:
+        - -1,3:-1,2
+    matrix5:
+        type: math_matrix
+        name: Matrix example 5
+        header: |-
+            Soit la matrice suivante:
+
+            .. math::
+
+                    A = \begin{bmatrix}
+                            a & b \\
+                            c & d
+                        \end{bmatrix}
+
+            Calculer l'inverse de A.
+            On suppose ad-bc différent de 0.
+
+
+            Solution: d/ad-bc, -b/ad-bc: -c/ad-bc, a/ad-bc
+        hints: ''
+        answers:
+        - \frac{d}{ad-bc},\frac{-b}{ad-bc}:\frac{-c}{ad-bc},\frac{a}{ad-bc}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

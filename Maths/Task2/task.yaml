@@ -1,0 +1,80 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: Example for math intervals.
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Math interval
+network_grading: false
+problems:
+    Interval1:
+        type: math_interval
+        name: Interval example 1
+        header: |-
+            Résoud l'inéquation suivante:
+            x² >= 2-x
+
+            Donne ta solution sous forme d'interval(s).
+
+            Solution: (-infinity,-2]U[1,infinity)
+        hints: ''
+        answers:
+        - (-\infty,-2]\cup[1,\infty)
+    Interval2:
+        type: math_interval
+        name: Interval example 2
+        header: |-
+            Résoud l'inéquation suivante:
+            x⁵<=4x
+
+            Donne ta solution sous forme d'interval(s).
+
+            Solution: (-infinity,-sqr(2)]U[0, sqr(2)]
+        hints: ''
+        answers:
+        - (-\infty,-\sqrt{2}]\cup[0,\sqrt{2}]
+    Interval3:
+        type: math_interval
+        name: Interval example 3
+        header: |-
+            Soit l'équation:
+
+            .. math::
+
+                    \frac{ x+3 }{x+2} - \frac{x+2}{3x+9} <= \frac{ x²-3 }{x²+5x+6}
+
+            Donne ta solution sous la forme d'interval(s)
+
+            solution: (-infinity,-3)U[16,infinity)
+        hints: ''
+        answers:
+        - \left(-\infty,-3\right)\cup\left[16,\infty\right)
+    Interval4:
+        type: math_interval
+        name: Interval example 4
+        header: |-
+            Soit l'équation:
+
+            .. math::
+
+                    6x>=x²+9
+
+            Donne ta solution sous la forme d'interval(s).
+
+            Remarque: Si un interval ne contient qu'une seule valeur, par exemple a, tu peux écrire [a]
+
+            solution: [3]
+        hints: ''
+        answers:
+        - \left[3\right]
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
