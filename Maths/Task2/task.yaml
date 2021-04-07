@@ -2,7 +2,12 @@ accessible: true
 author: ''
 categories: []
 contact_url: ''
-context: Example for math intervals.
+context: |-
+    Example for math intervals.
+
+    since this is a bit like a tutorial, the solutions are given in the hints.
+
+    Don't copy-paste solutions from hints since some characters way not use the same encoding.
 environment_id: mcq
 environment_parameters: {}
 environment_type: mcq
@@ -18,12 +23,10 @@ problems:
         name: Interval example 1
         header: |-
             Résoud l'inéquation suivante:
-            x² >= 2-x
+            :math:`x² \geq 2-x`
 
             Donne ta solution sous forme d'interval(s).
-
-            Solution: (-infinity,-2]U[1,infinity)
-        hints: ''
+        hints: 'Solution: :math:`(-\infty,-2]\cup[1,\infty)`'
         answers:
         - (-\infty,-2]\cup[1,\infty)
     Interval2:
@@ -31,46 +34,35 @@ problems:
         name: Interval example 2
         header: |-
             Résoud l'inéquation suivante:
-            x⁵<=4x
+            :math:`x⁵ \leq 4x`
 
             Donne ta solution sous forme d'interval(s).
-
-            Solution: (-infinity,-sqr(2)]U[0, sqr(2)]
-        hints: ''
+        hints: 'Solution: :math:`(-\infty,-\sqrt{2}]\cup[0,\sqrt{2}]`'
         answers:
         - (-\infty,-\sqrt{2}]\cup[0,\sqrt{2}]
     Interval3:
         type: math_interval
         name: Interval example 3
         header: |-
-            Soit l'équation:
+            Soit l'inéquation:
 
-            .. math::
-
-                    \frac{ x+3 }{x+2} - \frac{x+2}{3x+9} <= \frac{ x²-3 }{x²+5x+6}
+            :math:`\frac{ x+3 }{x+2} - \frac{x+2}{3x+9} \leq \frac{ x²-3 }{x²+5x+6}`
 
             Donne ta solution sous la forme d'interval(s)
-
-            solution: (-infinity,-3)U[16,infinity)
-        hints: ''
+        hints: 'Solution: :math:`(-\infty,-3)\cup[16,\infty)`'
         answers:
         - \left(-\infty,-3\right)\cup\left[16,\infty\right)
     Interval4:
         type: math_interval
         name: Interval example 4
-        header: |-
-            Soit l'équation:
-
-            .. math::
-
-                    6x>=x²+9
+        header: |
+            Soit l'inéquation:
+            :math:`6x \geq x²+9`
 
             Donne ta solution sous la forme d'interval(s).
 
             Remarque: Si un interval ne contient qu'une seule valeur, par exemple a, tu peux écrire [a]
-
-            solution: [3]
-        hints: ''
+        hints: 'Solution: :math:`[3]`'
         answers:
         - \left[3\right]
 stored_submissions: 0

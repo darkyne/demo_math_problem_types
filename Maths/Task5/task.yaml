@@ -4,8 +4,12 @@ categories: []
 contact_url: ''
 context: |-
     Examples of exercices using the basic math problem type.
+
     This allows numerical values, expressions, equations, inequations, functions...
+
     But vectors, matrix or intervals require to use the other specific problem types.
+
+    Since this is a bit like a tutorial, the solutions are given in the hints.
 environment_id: mcq
 environment_parameters: {}
 environment_type: mcq
@@ -19,43 +23,38 @@ problems:
     Math1:
         type: math
         name: Math example 1
-        header: |-
+        header: |
             Quelle est la surface d'un cercle de rayon R=9cm ?
             Exprime la réponse en cm.
             Une marge de 0.1 est acceptée.
-
-            Solution: pi*81 ou encore 254.469 soit une valeur entre 254.369 et 254.569
-        hints: ''
+        hints: 'Solution: :math:`81\pi` ou encore 254.469 +-0.1 soit une valeur entre
+            254.369 et 254.569'
         tolerance: 0.1
         answers:
         - 81\pi
     Math2:
         type: math
         name: Math example 2
-        header: |-
+        header: |
             Quelle est le périmètre d'un cercle de rayon R=9cm ?
             Exprime la réponse en cm.
             Une marge de 0.1 est acceptée.
-
-            Solution: 18pi ou encore une valeur avoisinant 56.55
-        hints: ''
+        hints: 'Solution: :math:`18\pi` ou encore environ 56.55'
         tolerance: 0.1
         answers:
         - 18\pi
     Math3:
         type: math
         name: Math example 3
-        header: |-
+        header: |
             Quelle est la primitive de la fonction f(x)=5x²+yx+3 ?
-
-            Solution: (5/3)*x³+(y/2)*x²+3x
-        hints: ''
+        hints: 'Solution: :math:`\frac{5}{3}x³+\frac{y}{2}x²+3x`'
         answers:
         - \frac{5}{3}x^3+\frac{y}{2}x^2+3x
     Math4:
         type: math
         name: Math example 4
-        header: |-
+        header: |
             Soit l'équation:
 
             .. math::
@@ -64,9 +63,7 @@ problems:
 
             Ne résoud pas, donne simplement les conditions d'existence.
             S'il y a plusieurs conditions, rentre chacune via le bouton add answer.
-
-            solution: x!=3 et x!=1
-        hints: ''
+        hints: 'Solution: :math:`x \neq 3` et :math:`x \neq -1`'
         answers:
         - x\ne3
         - x\ne-1
