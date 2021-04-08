@@ -1,7 +1,13 @@
 accessible: true
 name: Math-plugin-examples
-description: 'Ce cours regroupe quelques exemples d''exercices de math simples se
-    basant sur les nouvelles features ajoutées: math_interval et math_matrix'
+description: |-
+    Ce cours regroupe quelques exemples d'exercices de math simples se basant sur les nouvelles features ajoutées: math_interval et math_matrix
+
+    **math**: Il s'agit du type d'exercice de base. Il permet d'ajouter une tolerance (en valeur absolue) et d'encoder des expressions, des valeurs numériques, des équations ou inéquations...
+
+    **math_matrix**: Ce type de problème permet d'encoder des matrices via le format [a,b:c,d]. Cela permet également d'encoder des vecteurs [a,b,c] car un vecteur de taille a n'est qu'une matrice de taille 1xa.
+
+    **math_interval**: Ce type de prlbème permet d'encoder des intervals comme le domaine d'une fonction ou des conditions d'existence avc le format (0,5]U[10,12]. A noter que les symbols () représentent une exlusion et [] des inclusions. Donc (0,5] signifie de 0 exclu à 5 inclu.
 admins:
 - admin
 tutors: []
@@ -12,7 +18,7 @@ registration: true
 registration_password: null
 registration_ac: null
 registration_ac_list:
-- '        '
+- '          '
 is_lti: false
 lti_url: ''
 lti_keys: {}
@@ -24,7 +30,6 @@ dispenser_data:
     id: tasks-list
     rank: 0
     tasks_list:
-        Task1: 4
         Task2: 0
         Task3: 1
         Task4: 2
