@@ -3,13 +3,13 @@ author: ''
 categories: []
 contact_url: ''
 context: |-
-    Examples of exercices using the basic math problem type.
+    Exemples d'exercices utilisant le problem type: math (de base).
 
-    This allows numerical values, expressions, equations, inequations, functions...
+    Cela permet d'encoder des valeurs numériques, des expressions mathématiques, des équations ou inéquation...
 
-    But vectors, matrix or intervals require to use the other specific problem types.
+    Pour encoder un vecteur, une matrice ou des intervals, il faut utiliser les autres types de problèmes dédiés.
 
-    Since this is a bit like a tutorial, the solutions are given in the hints.
+    Etant donné qu'il s'agit d'exemples à vocation de tutoriel, les solutions sont données en hint.
 environment_id: mcq
 environment_parameters: {}
 environment_type: mcq

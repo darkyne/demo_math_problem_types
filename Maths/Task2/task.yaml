@@ -3,11 +3,11 @@ author: ''
 categories: []
 contact_url: ''
 context: |-
-    Example for math intervals.
+    Exemples d'exercices utilisant les matrices.
 
-    since this is a bit like a tutorial, the solutions are given in the hints.
+    Etant donné qu'il s'agit simplement d'exemples à vocation de tutoriel, les solutions sont données en hint.
 
-    Don't copy-paste solutions from hints since some characters way not use the same encoding.
+    Ne copiez-collez pas la solution depuis le hint car il se peut que l'encodage de certains caractères ne correspond pas.
 environment_id: mcq
 environment_parameters: {}
 environment_type: mcq

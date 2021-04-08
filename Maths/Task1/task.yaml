@@ -40,7 +40,7 @@ problems:
         answers:
         - 1,2,3:4,5,6:7,8,9
     Math_multi_vector:
-        type: math_vector
+        type: math_matrix
         name: This is a math_vector problem with multiple vectors
         header: |-
             Enter the 3 following matrix:
@@ -74,7 +74,7 @@ problems:
         -   answer: '805'
             feedback: nice try !
     Math_vector:
-        type: math_vector
+        type: math_matrix
         name: This is a math_vector problem
         header: |
             Enter the 5 firts values of the x_n+1 = 2*x_n starting with value 1.

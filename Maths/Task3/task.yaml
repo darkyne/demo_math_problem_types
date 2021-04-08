@@ -3,9 +3,10 @@ author: ''
 categories: []
 contact_url: ''
 context: |-
-    Examples for math vectors.
+    Exemples d'exercices utilisant des vecteurs.
+    Pour rappel, un vecteur de taille a est simplement encodé comme une matrice 1xa.
 
-    since this is a bit like a tutorial, the solutions are given in the hints.
+    Etant donné qu'il s'agit d'exemples à vocation de tutoriel, les solutions sont données en hint.
 environment_id: mcq
 environment_parameters: {}
 environment_type: mcq
@@ -17,10 +18,10 @@ name: Math vectors
 network_grading: false
 problems:
     Vector1:
-        type: math_vector
+        type: math_matrix
         name: Vector example 1
         header: |
-            Enter a vector containing the first 10 elements of the suite:
+            Entrer un vecteur contenant les 10 premiers éléments de la suite suivante:
             :math:`x_{n+1} = 1+2x_n` starting with :math:`x_0 = 0`
         hints: 'Solution: 0,1,3,7,15,31,63,127,255,511'
         answers:
@@ -30,7 +31,7 @@ problems:
             feedback: Verify your last value ! I know 512 sounds more familiar to
                 IT but...
     Vector2:
-        type: math_vector
+        type: math_matrix
         name: Vector example 2
         header: |
             Soit un vecteur AB: [-2,1,3] et un vecteur AC: [1,-2,0].
@@ -40,8 +41,8 @@ problems:
         answers:
         - \frac{\sqrt{6}}{3},\frac{\sqrt{6}}{6},\frac{\sqrt{6}}{6}
     Vector3:
-        type: math_vector
-        name: Vector example 4
+        type: math_matrix
+        name: Vector example 3
         header: |
             Transforme le vecteur suivant en vecteur unitaire:
             [1,1,1]
@@ -49,7 +50,7 @@ problems:
         answers:
         - \frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}
     Vector4:
-        type: math_vector
+        type: math_matrix
         name: Vector 4 example
         header: |
             Entre les coordonnées cartésiennes du point à mi distance entre les points A et B:
@@ -59,7 +60,7 @@ problems:
         answers:
         - 0.5,0.5
     Vector5:
-        type: math_vector
+        type: math_matrix
         name: Vector example 5
         header: |
             Entre le point de l'espace 3D à mi-distance entre A et B:
@@ -69,7 +70,7 @@ problems:
         answers:
         - 0.5,0.5,0.5
     Vector6:
-        type: math_vector
+        type: math_matrix
         name: Vector example 6
         header: |
             Soit une fusée qui vole à 400m/s et qui suit une trajectoire parfaitement verticale par rapport au repère cartésien utilisé.
@@ -78,7 +79,7 @@ problems:
         answers:
         - x_0,y_0,z_0+4000
     Vector7:
-        type: math_vector
+        type: math_matrix
         name: Vector example 7
         header: |-
             Soit l'équation :math:`x⁵+x³=12x`

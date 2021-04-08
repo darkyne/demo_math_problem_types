@@ -1,7 +1,7 @@
 accessible: true
 name: Math-plugin-examples
-description: This course is for math exercises small basic examples using the math
-    plugin.
+description: 'Ce cours regroupe quelques exemples d''exercices de math simples se
+    basant sur les nouvelles features ajoutées: math_interval et math_matrix'
 admins:
 - admin
 tutors: []
@@ -12,7 +12,7 @@ registration: true
 registration_password: null
 registration_ac: null
 registration_ac_list:
-- '      '
+- '        '
 is_lti: false
 lti_url: ''
 lti_keys: {}
@@ -29,4 +29,4 @@ dispenser_data:
         Task3: 1
         Task4: 2
         Task5: 3
-    title: Tasks using new problem types
+    title: Exercices

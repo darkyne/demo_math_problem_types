@@ -3,9 +3,9 @@ author: ''
 categories: []
 contact_url: ''
 context: |-
-    Example for math matrix.
+    Exemples d'exercices utilisant des matrices.
 
-    since this is a bit like a tutorial, the solutions are given in the hints.
+    Etant donné qu'il s'agit d'exemples à vocation de tutoriel, les solutions sont données en hint.
 environment_id: mcq
 environment_parameters: {}
 environment_type: mcq
@@ -65,7 +65,7 @@ problems:
         - 0,0:0,0
     matrix3:
         type: math_matrix
-        name: ''
+        name: Matrix example 3
         header: |
             Soit les matrices suivantes:
 
@@ -95,7 +95,7 @@ problems:
         - 6,3:-12,-6
     matrix4:
         type: math_matrix
-        name: ''
+        name: Matrix example 4
         header: |4-
                 Soit la matrice:
 
