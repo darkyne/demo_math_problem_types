@@ -1,13 +1,15 @@
 accessible: true
 name: Math-plugin-examples
 description: |-
-    Ce cours regroupe quelques exemples d'exercices de math simples se basant sur les nouvelles features ajoutées: math_interval et math_matrix
+    Ce cours vous est fournis dans le cadre de la formation INGInious-math du 14 avril 2021.
+    Une sélection d'exemples d'exercices vous a également été fournis.
 
-    **math**: Il s'agit du type d'exercice de base. Il permet d'ajouter une tolerance (en valeur absolue) et d'encoder des expressions, des valeurs numériques, des équations ou inéquations...
+    Suite à la séance d'information, ce cours restera à votre disposition afin que vous puissiez y développer votre cours en ligne !
 
-    **math_matrix**: Ce type de problème permet d'encoder des matrices via le format [a,b:c,d]. Cela permet également d'encoder des vecteurs [a,b,c] car un vecteur de taille a n'est qu'une matrice de taille 1xa.
+    Pour plus d'informations, n'hésitez pas à ouvrir la documentation https://docs.inginious.org/en/latest/teacher_documentation.html
+    ou à contacter exomath@listes.uclouvain.be.
 
-    **math_interval**: Ce type de prlbème permet d'encoder des intervals comme le domaine d'une fonction ou des conditions d'existence avc le format (0,5]U[10,12]. A noter que les symbols () représentent une exlusion et [] des inclusions. Donc (0,5] signifie de 0 exclu à 5 inclu.
+    Pensez à modifier le titre de ce cours et cette description !
 admins:
 - admin
 tutors: []
@@ -18,7 +20,7 @@ registration: true
 registration_password: null
 registration_ac: null
 registration_ac_list:
-- '          '
+- '              '
 is_lti: false
 lti_url: ''
 lti_keys: {}
@@ -27,11 +29,38 @@ task_dispenser: toc
 dispenser_data:
 -   config:
         closed: false
-    id: tasks-list
+    id: exemples_dexercices
     rank: 0
+    tasks_list:
+        PrepMD2018Q1: 1
+        PrepMD2018Q2: 0
+        PrepMD2018Q3: 2
+        PrepMD2018Q4: 3
+        PrepMD2018Q5: 4
+        PrepMD2018Q9: 8
+        PrepMD2019Q1: 5
+        PrepMD2019Q2: 6
+        cont1_3: 14
+        foncExp8: 17
+        foncLog6: 18
+        limite11: 15
+        multiple: 9
+        q194: 19
+        q214: 20
+        q30: 10
+        q30bis: 11
+        q58: 12
+        q84: 13
+        random: 7
+        suite7: 16
+    title: Exemples d'exercices
+-   config:
+        closed: false
+    id: tasks-list
+    rank: 1
     tasks_list:
         Task2: 0
         Task3: 1
         Task4: 2
         Task5: 3
-    title: Exercices
+    title: Exercices avec solutions

@@ -1,0 +1,57 @@
+accessible: true
+author: Manon Oreins, Edmond Sahyoun
+categories: []
+contact_url: ''
+context: ''
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '10) Calcul vectoriel '
+network_grading: false
+order: 13
+problems:
+    q84:
+        name: ''
+        answers:
+        - -2\sqrt{2}
+        type: math
+        hints: |-
+            - Utiliser la formule
+
+            .. math::
+                 \vec{u} \cdot \vec{v} = \|\vec{u}\|.\|\vec{v}\|.cos(\alpha)
+
+            - Vous pouvez déterminer l'angle entre les deux vecteurs grâce aux angles remarquables du cercle trigonométrique
+            - le rayon du cercle peut servir à déterminer les normes
+        header: |+
+            La  figure  suivante  représente  un  cercle  de  rayon  :math:`2`  centré  en  :math:`O` et des droites :math:`AB` et :math:`OC` parallèles.
+
+            Que vaut le produit scalaire :math:`\overrightarrow{OA} \cdot \overrightarrow{OC}` ?
+
+            .. raw:: html
+
+                <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
+                <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
+                <center>
+                <div id='jxgbox1' class='jxgbox mb-3' style='width:400px; height:300px;'></div>
+              <script type='text/javascript'>
+                var b = JXG.JSXGraph.initBoard('jxgbox1', {boundingbox: [-3, 3, 3, -2], axis: true});
+                b.create('circle', [[0,0],2]);
+                b.create('point',[0,0],{name:'O'});
+                b.create('point',[0,2],{name:'A'});
+                b.create('point',[2,0],{name:'B'});
+                b.create('point',[1.4,-1.4],{name:'C'});
+                b.create('line',['A','B']);
+                b.create('line',['O','C']);
+              </script>
+              </center>
+
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

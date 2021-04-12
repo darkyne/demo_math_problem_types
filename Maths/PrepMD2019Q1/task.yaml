@@ -1,0 +1,144 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: (MD2019Q2)
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 4) Mise en équation
+network_grading: false
+problems:
+    PrepMD2019q12:
+        header: |-
+            Dans le pay P, il y a deux types de médecins: ceux qui sont conventionnées et ceux qui ne le sont pas.
+
+            Si je vais chez un médecin conventionné, il me facturera des honoraires dont une partie sera payée par la mutuelle. Je dois alors payer 8€, le reste étant pris en charge par la mutuelle.
+
+            Si je vais chez un médecin non conventionné, ses honoraires seront le double de ceux d'un médecin conventionné, et la mutualité ne payera que la moitié de la somme qu'elle aurait payée pour un médecin conventionné. Je paye lors 40€, le reste étant pris en charge par la mutuelle.
+
+            Quels sont les honoraires d'un médecin non conventionné?
+
+            Réponse attendue en euros (sans le symbole).
+        error_message: |-
+            Malheureusement, la réponse n'est pas correcte.
+
+            Soit :math:`x` : l'inconnue représentant le montant des honoraires du médecin conventionné.
+
+            Soit :math:`m` : l'inconnue représentant le montant de l'intervention de la mutuelle pour un médecin conventionné.
+
+            Soit :math:`y` : l'inconnue représentant le montant des honoraires du médecin NON conventionné.
+
+            Soit :math:`n` : l'inconnue représentant le montant de l'intervention de la mutuelle pour un médecin NON conventionné.
+
+
+            Résolution par étapes:
+
+            Step 1: Etablir l'équation des honoraires du médecin conventionné.
+
+            Step 2: Etablir l'équation des honoraires du médecin NON conventionné.
+
+            Step 3: Utiliser les informations de l'énoncé afin de réduire le nombre d'inconnues et aboutir à 1 équation à 1 inconnue.
+
+            Step 4: Résoudre l'équation et trouver la valeur de :math`m` .
+
+            Step 5: Répondre à la question initiale!!!!
+
+            Vous pouvez accéder à la question step by step en cliquant ici:
+
+            https://inginious.org/course/maths_demo/PrepMD2019Q2
+
+
+
+            Solution
+
+
+            Step 1: Etablir l'équation des honoraires du médecin conventionné.
+
+            Médecin conventionné: 8€ sont payés par le patient et :math:`m` par la mutielle:
+
+            .. math::
+
+                                x=8+m
+
+            Step 2: Etablir l'équation des honoraires du médecin NON conventionné.
+
+            Médecin non conventionné: 40€ sont payés par le patient et :math:`n` par la mutielle:
+
+            .. math::
+                                y=40+n
+
+            Step 3: Utiliser les informations de l'énoncé afin de réduire le nombre d'inconnues et aboutir à 1 équation à 1 inconnue.
+
+            On sait en outre que
+
+            - si je vais chez un médecin non conventionné, ses honoraires seront le double de ceux d'un médecin conventionné donc:
+
+            .. math::
+                                y=2x
+
+            En substituant :math:`x` par :math:´8+m´ via l'équation :math:´(1)´ on obtient:
+
+            .. math::
+                                 y=2(8+m)
+                                  =16+2m        (3)
+
+            Et en égalant cette nouvelle équation en :math:`y` avec l'équation :math:´(2)´ , on obtient:
+
+            .. math::
+                                  16+2m=40+n        (4)
+
+            - si je vais chez un médecin non conventionné, la mutualité ne payera que la moitié de la somme qu'elle aurait payée pour un médecin conventionné donc:
+
+            .. math::
+                                n=m/2
+
+            et dès lors :math:´(4)´ devient
+
+            .. math::
+                                  16+2m=40+m/2
+
+            Multiplier l'équation par 2 afin de supprimer le coefficient de 1/2:
+
+            .. math::
+                                  32+4m=80+m
+
+            Ramener tous les termes d'un côté:
+
+            .. math::
+                                  -48+3m=0
+                                  3m-48=0
+
+            Step 4: Résoudre l'équation et trouver la valeur de :math`m` .
+
+            Résoudre l'équation:
+
+            .. math::
+
+                                  3m-48=0
+                                  m=48/3
+                                  m=16
+
+            Step 5: Répondre à la question initiale!!!!
+
+            Quels sont les honoraires d'un médecin NON conventionné?
+
+
+            Substituer :math:`m=16` dans l'équation :math:´(3)´ :
+
+            .. math::
+                                y=16+2m
+                                y=16+32=48
+        type: math
+        name: ''
+        answer: '48'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 5

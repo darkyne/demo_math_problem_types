@@ -1,0 +1,45 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: ''
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 7) Equation trigonométrique avec réponses multiples
+network_grading: false
+problems:
+    multiple:
+        answers:
+        - '10.9'
+        - '190.9'
+        - '100.9'
+        - '280.9'
+        type: math
+        header: |-
+            Résoudre l'équation trigonométrique
+
+            .. math::
+
+                     5sin2x = 2cos2x
+
+            dans l'intervalle :math:`0 \leq x < 360°` .
+
+            Donner les valeurs en degrés et arrondir la réponse numérique à 1 décimale près.
+        hints: |-
+            Step 1: diviser les 2 côtés de l'équation par :math:`cos2x` afin d'obtenir une équation en tangente.
+
+            Step 2: calculer la valeur de :math:`2x` dans l'intervalle :math:`0 \leq x < 720°` .
+
+            Step 3: diviser les valeurs obtenues par 2.
+        name: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 9

@@ -1,0 +1,37 @@
+accessible: true
+author: Manon Oreins,  Edmond Sahyoun
+categories: []
+contact_url: ''
+context: ''
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '9) (in)équations '
+network_grading: false
+order: 12
+problems:
+    q58:
+        hints: '- Utiliser la substitution et/ou la combinaison pour résoudre le systême'
+        name: ''
+        type: math
+        answers:
+        - '4'
+        header: |-
+            Soient :math:`x` et :math:`y` les deux nombres réels satisfaisant
+
+            .. math::
+                        \begin{cases}
+                            2x+3y=1\\
+                            4x-y=9
+                        \end{cases}
+
+            Que vaut :math:`x-2y` ?
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

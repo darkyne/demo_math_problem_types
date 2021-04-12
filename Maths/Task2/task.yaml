@@ -20,7 +20,7 @@ network_grading: false
 problems:
     Interval1:
         type: math_interval
-        name: Interval example 1
+        name: Exemple d'interval 1
         header: |-
             Résoud l'inéquation suivante:
             :math:`x² \geq 2-x`
@@ -31,7 +31,7 @@ problems:
         - (-\infty,-2]\cup[1,\infty)
     Interval2:
         type: math_interval
-        name: Interval example 2
+        name: Exemple d'interval 2
         header: |-
             Résoud l'inéquation suivante:
             :math:`x⁵ \leq 4x`
@@ -42,7 +42,7 @@ problems:
         - (-\infty,-\sqrt{2}]\cup[0,\sqrt{2}]
     Interval3:
         type: math_interval
-        name: Interval example 3
+        name: Exemple d'interval 3
         header: |-
             Soit l'inéquation:
 
@@ -54,7 +54,7 @@ problems:
         - \left(-\infty,-3\right)\cup\left[16,\infty\right)
     Interval4:
         type: math_interval
-        name: Interval example 4
+        name: Exemple d'interval 4
         header: |
             Soit l'inéquation:
             :math:`6x \geq x²+9`

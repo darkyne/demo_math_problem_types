@@ -1,0 +1,61 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: (MD 2018q15)
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '3)  QCM graphes '
+network_grading: false
+problems:
+    PrepMD2018q151:
+        choices:
+        -   feedback: Malheureusement, il s'agit ici du graphe de cosx.
+            text: |-
+                .. raw:: html
+
+                  <div id='jxgbox2' class='jxgbox mb-3' style='width : 300px; height : 150px;'></div>
+                  <script type='text/javascript'>
+                    var b = JXG.JSXGraph.initBoard('jxgbox2', {boundingbox : [-3, 3, 3, -2], axis : true});
+                    b.create('functiongraph', [function(x){return Math.cos(x);},-2,2]);
+                  </script>
+        -   text: |-
+                .. raw:: html
+
+                  <div id='jxgbox3' class='jxgbox mb-3' style='width:300px; height:150px;'></div>
+                  <script type='text/javascript'>
+                    var b = JXG.JSXGraph.initBoard('jxgbox3', {boundingbox: [-3, 3, 3, -2], axis: true});
+                    b.create('functiongraph', [function(x){return Math.asin(x);},-2,2]);
+                  </script>
+            valid: true
+            feedback: Bravo, c'est la bonne réponse!
+        -   feedback: Malheureusement, il s'agit ici du graphe de sinx.
+            text: |-
+                .. raw:: html
+
+                  <div id='jxgbox4' class='jxgbox mb-3' style='width:300px; height:150px;'></div>
+                  <script type='text/javascript'>
+                    var b = JXG.JSXGraph.initBoard('jxgbox4', {boundingbox: [-3, 3, 3, -2], axis: true});
+                    b.create('functiongraph', [function(x){return Math.sin(x);},-2,2]);
+                  </script>
+        header: |-
+            Parmi les figures ci-dessous, une seule peut être une partie de la représentation graphique de la fonction :math:`f(x)=arcsin(x)`. Laquelle?
+
+            .. raw:: html
+
+              <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
+              <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
+        limit: 0
+        type: multiple_choice
+        name: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 4

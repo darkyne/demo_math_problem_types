@@ -1,0 +1,82 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: (MD 2018q11)
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 2) Intégration
+network_grading: false
+problems:
+    PrepMD2018q41:
+        answer: \frac{1}{2}
+        header: |-
+            Que vaut
+
+            .. math::
+                \int_\frac{-\pi}{2}^\pi x cos 2x dx
+                                                     ?
+        type: math
+        name: ''
+        error_message: |-
+            Malheureusement, ceci n'est pas la bonne réponse.
+
+            Lorsqu'on doit intégrer un produit de fonctions, on peut opter pour l'intégration par parties ou par substitution. Dan ce cas précis, c'est l'intégration par parties qui sera plus appropriée parce qu'on travaille avec des fonctions dont l'intégration ou la dérivation est assez simple.
+
+            Rappel de la formule simplifiée de l'intégration par parties:
+
+            .. math::
+
+                        \int udv = uv - \int vdu
+
+            Si dans ce cas, on pose
+
+            :math:`u(x)=x`  => :math:`u'(x)=1`
+
+            :math:`v'(x)=cos 2x`  => :math:`v(x)=\frac{1}{2} sin 2x`
+
+            Alors, on peut écrire:
+
+            .. math::
+
+                        \int_\frac{-\pi}{2}^\pi x cos 2x dx     = [\frac{1}{2} x sin 2x - \frac{1}{2} \int sin 2x dx]_\frac{-\pi}{2}^\pi
+
+                                            = \left[\frac{1}{2} x sin 2x - \frac{1}{2} \left(-\frac{1}{2} cos 2x \right)\right]_\frac{-\pi}{2}^\pi
+
+            En substituant avec les limites d'intégration, on obtient:
+
+            .. math::
+
+                        \int_\frac{-\pi}{2}^\pi x cos 2x dx = \frac{1}{2} \pi sin 2 \pi + \frac{1}{4} cos 2 \pi - (\frac{1}{2} (\frac{-\pi}{2}) sin (-\pi) + \frac{1}{4} cos (-\pi))
+
+
+            Or, en traçant un cercle trigonométrique, on trouve facilement que
+
+            .. math::
+
+                        sin 2 \pi = 0
+
+                        cos 2 \pi = 1
+
+                        sin  -\pi = 0
+
+                        cos  -\pi = -1
+
+            et on peut donc substituer ces valeurs pour trouver la réponse.
+
+            Pour plus d'informations concernant l'intégration par parties:
+            https://fr.khanacademy.org/math/calculus-home/integration-techniques-calc/integration-by-parts-calc/a/integration-by-parts-review
+
+            Pour plus d'informations concernant le cercle trigonométrique:
+            https://fr.khanacademy.org/math/algebra2/trig-functions/unit-circle-definition-of-trig-functions-alg2/v/unit-circle-definition-of-trig-functions-1
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 2

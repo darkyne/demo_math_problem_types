@@ -1,0 +1,62 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: (MD2019q20)
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 6) Feedback graphique
+network_grading: false
+problems:
+    PrepMD2019q20:
+        header: |-
+            .. raw:: html
+
+                <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
+                <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
+
+            Considérons la fonction réelle :math:`f` dont l'expression analytique est donnée par
+
+            .. math::
+
+                        f(x) = ln (-2x² + x + 1)
+
+
+            Quel est la valeur minimum possible de :math:`f` ?
+        type: math
+        answer: \frac{-1}{2}
+        name: ''
+        error_message: |-
+            Malheureusement, ceci n'est pas la réponse correcte.
+
+            Rappelez-vous de la forme de la courbe de :math:`ln x` .
+
+            .. raw:: html
+
+              <div id='jxgbox' class='jxgbox' style='width:600px; height:400px;'></div>
+              <script type='text/javascript'>
+                var b = JXG.JSXGraph.initBoard('jxgbox', {boundingbox: [-3, 3, 3, -2], axis: true});
+                b.create('functiongraph', [function(x){return Math.log(x);},-2,6]);
+              </script>
+
+
+            Elle contient une asymptote verticale à :math:`x=0` et donc le domaine de définition de :math:`ln x` est :math:`x > 0` .
+
+            Ici, nous regardons :math:`f(x) = ln (-2x² + x + 1)` et devons donc poser la condition:
+
+            .. math::
+
+                        -2x² + x + 1 > 0
+
+            Pour résoudre ce genre d'inégalité, vous devez d'abord factoriser l'équation quadratique et ensuite utiliser une méthode graphique ou une ligne numérique.
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 8

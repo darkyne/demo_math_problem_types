@@ -1,0 +1,122 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |+
+    Quel est l'ensemble des réels :math:`m` tels que l'équation
+
+    .. math::
+             (m-3)x^2-2x+2=0
+
+
+    admette exactement deux racines distinctes?
+
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 1 bis) Discriminant Step-by-Step
+network_grading: false
+problems:
+    MD2018Q1Step1:
+        name: Calculer le discriminant de l'équation du second degré en termes de
+            :math:`m` .
+        header: 'La réponse est attendue sous forme d''expression. Par exemple: :math:`2x+6`
+            .'
+        answer: 28-8m
+        type: math
+        error_message: |-
+            Définition du discriminant d'une équation du second degré sous la forme :math:`ax^2+bx+c=0` :
+
+            :math:`b^2-4ac`
+
+                    où :math:`a` est le coefficient du terme en :math:`x^2`
+
+                    où :math:`b` est le coefficient du terme en :math:`x`
+
+                    où :math:`c` est le coefficient du terme indépendant de :math:`x`
+
+            Solution
+
+
+            Identifions la valeur des coefficients :math:`a` , :math:`b` et :math:`c` dans l'équation :math:`(m-3)x^2-2x+2=0` .
+
+            Attention: toujours veiller à ce que le terme de droite de l'équation soit égal à zéro avant de déterminer la valeur de :math:`a` , :math:`b` et :math:`c` .
+
+            :math:`a` est le coefficient du terme en :math:`x^2` donc :math:`a=`m-3`
+            :math:`b` est le coefficient du terme en :math:`x` donc :math:`b=-2`
+            :math:`c` est le coefficient du terme indépendant de :math:`x` donc `c=2`
+
+            Calculons le discriminant:
+
+            .. math::
+
+                        b^2-4ac=(-2)^2-4(m-3)x2
+
+                               =4-8(m-3)
+
+                               =4-8m-8(-3)
+
+                               =4-8m+24
+
+                               =28-8m
+    MD2018Q1Step2:
+        error_message: |-
+            Si :math:`b^2-4ac < 0` il n'y pas de solution réelle à l'équation
+
+            Si :math:`b^2-4ac > 0` il y a 2 solutions réelles à l'équation
+
+            Si :math:`b^2-4ac = 0` il y a 1 solution réelle (double) à l'équation
+
+            Plus d'informations:
+            https://fr.khanacademy.org/math/algebra/quadratics/solving-quadratics-using-the-quadratic-formula/a/discriminant-review
+
+            Solution
+
+
+            Afin que l'équation :math:`(m-3)x^2-2x+2=0` ait deux racines (réelles) distinctes, le discriminant de l'équation doit être strictement positif.
+
+            Donc il faut que :
+
+            .. math::
+
+                        b^2-4ac>0
+
+            C'est à dire:
+
+            .. math::
+
+                        28-8m>0
+        answer: 28-8m>0
+        name: Déterminer la condition qui doit être vérifiée par le discriminant et
+            écrire une équation ou une inéquation en termes de :math:`m` .
+        header: 'La réponse est attendue sous forme d''inéquation. Par exemple: :math:`x+2
+            \leq 5` .'
+        type: math
+    MD2018Q1Step3:
+        error_message: |-
+            .. math::
+
+                        28-8m>0
+
+                        28>8m
+
+                        \frac{28}{8}>m
+
+                        \frac{7}{2}>m
+
+                        m<\frac{7}{2}
+        header: 'La réponse est attendue sous forme d''inégalité. Par exemple: :math:`x
+            \leq 5` .'
+        name: Résoudre l'équation ou l'inéquation en termes de :math:`m` .
+        answer: m<\frac{7}{2}
+        type: math
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 1

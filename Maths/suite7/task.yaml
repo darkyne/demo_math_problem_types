@@ -1,0 +1,67 @@
+accessible: true
+author: Victor Belpaire,Maxime Parmentier
+categories: []
+contact_url: ''
+context: |-
+    .. raw:: html
+
+        On lâche une balle magique depuis le toit d'un immeuble à une hauteur de
+        <b><span id="p1"></span></b>m. À chaque rebond, la hauteur jusqu'où parvient la balle vaut 3 quarts de la hauteur à laquelle elle était parvenue au rebond précédent.
+
+    .. raw:: html
+
+        <script>
+            var h = 10*parseInt(input["@random"][0]*10+5);
+            document.getElementById("p1").innerHTML = h;
+        </script>
+environment_id: math
+environment_parameters:
+    limits:
+        time: '30'
+        hard_time: ''
+        memory: '100'
+    run_cmd: ''
+environment_type: docker
+evaluate: best
+file: ''
+groups: false
+input_random: '2'
+name: '13) Suites '
+network_grading: false
+order: 16
+problems:
+    q1:
+        header: |-
+            .. raw:: html
+
+                Quelle est la hauteur maximale atteinte par la balle après <b><span id="p2"></span></b> rebonds ? Entrer votre réponse avec au moins 3 chiffres significatifs.
+
+            .. raw:: html
+
+                <script>
+                    var n = parseInt(input["@random"][1]*8+3);
+                    document.getElementById("p2").innerHTML = n;
+                </script>
+
+            .. raw:: html
+
+                <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
+                <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
+        name: ''
+        type: math
+        hints: |-
+            La hauteur successive des rebonds évolue comme une suite géométrique de raison :math:`q` et de terme initial :math:`s_0`.
+
+            En sachant que
+
+            .. math::
+
+                s_n = s_0 q^n
+
+            Remplacer :math:`n` par 5 pour trouver la hauteur du 5ème rebond.
+regenerate_input_random: 'on'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

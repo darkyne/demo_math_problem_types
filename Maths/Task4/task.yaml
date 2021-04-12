@@ -13,12 +13,12 @@ evaluate: best
 file: ''
 groups: false
 input_random: '0'
-name: Math matrix
+name: Math matrice
 network_grading: false
 problems:
     matrix1:
         type: math_matrix
-        name: Matrix example 1
+        name: Exemple matrice 1
         header: |
             Ecris la matrice identité 3x3
         hints: |-
@@ -35,7 +35,7 @@ problems:
         - 1,0,0:0,1,0:0,0,1
     matrix2:
         type: math_matrix
-        name: Matrix example 2
+        name: Exemple matrice 2
         header: |
             Soit les matrices suivantes:
 
@@ -65,7 +65,7 @@ problems:
         - 0,0:0,0
     matrix3:
         type: math_matrix
-        name: Matrix example 3
+        name: Exemple matrice 3
         header: |
             Soit les matrices suivantes:
 
@@ -95,7 +95,7 @@ problems:
         - 6,3:-12,-6
     matrix4:
         type: math_matrix
-        name: Matrix example 4
+        name: Exemple matrice 4
         header: |4-
                 Soit la matrice:
 
@@ -120,7 +120,7 @@ problems:
         - -1,3:-1,2
     matrix5:
         type: math_matrix
-        name: Matrix example 5
+        name: Exemple matrice 5
         header: |
             Soit la matrice suivante:
 

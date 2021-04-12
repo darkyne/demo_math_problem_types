@@ -1,0 +1,72 @@
+accessible: true
+author: Manon Oreins, Edmond Sahyoun
+categories: []
+contact_url: ''
+context: ''
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: 8bis) Problèmes - Step by step
+network_grading: false
+order: 11
+problems:
+    q1:
+        header: |-
+            Il y a sept ans, un homme était six fois plus âgé que son fils.
+
+            En posant :math:`x` comme étant l'âge actuel du fils et :math:`y` comme étant l'âge actuel de l'homme.
+
+            Quelle est l'équation qui illustre la situation ci-dessus ?
+        choices:
+        -   feedback: Cette équation ne prends pas en compte l'âge qu'ils avaient
+                il y a 7 ans
+            answer: y=6x
+        -   feedback: Est-ce vraiment l'âge du fils qui est diminué de 7 dans cette
+                équation ?
+            answer: y-7=6x-7
+        name: ''
+        hints: ''
+        answers:
+        - y=6x-35
+        type: math
+    q2:
+        header: |-
+            Aujourd’hui, l’âge du père vaut le quart du carré de l’âge du fils.
+
+            Toujours avec les mêmes variable, quelle est l'équation qui illustre cette situation ?
+        name: ''
+        type: math
+        hints: ''
+        answers:
+        - y=\frac{x^2}{4}
+    q3:
+        header: |-
+            En considérant les deux équations précédentes comme formant un système d'équations, quel est l'âge actuel du père et du fils, sachant que le père a maintenant plus de trente ans ?
+
+            Rajoutez un champs de réponse. Exemple :
+
+            Premier champs : :math:`x=5`
+
+            Deuxième champs : :math:`y=6`
+        hints: ''
+        type: math
+        answers:
+        - y=49
+        - x=14
+        name: ''
+    q4:
+        header: Quelle est aujourd’hui la somme de leurs âges?
+        name: ''
+        answers:
+        - '63'
+        type: math
+        hints: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

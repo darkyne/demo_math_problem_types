@@ -1,0 +1,67 @@
+accessible: true
+author: Victor Belpaire,Maxime Parmentier
+categories: []
+contact_url: ''
+context: Tangente au graphe
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '15) Fonctions logarithmes '
+network_grading: false
+order: 18
+problems:
+    q1:
+        header: |-
+            Donner l'équation cartésienne de la tangente au graphe de la fonction :math:`f` donnée ci-dessous au point d'abscisse :math:`x=0`.
+
+            .. math::
+
+                f : ]-\frac{1}{2}; +\infty[ \to \mathbb{R} : x \mapsto \ln(2x+1)
+
+            Donner une équation cartésienne en fonction de :math:`x` et de :math:`y`.
+
+            .. raw:: html
+
+                <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
+                <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
+        name: Tangente au graphe
+        type: math
+        success_message: |-
+            .. raw:: html
+
+                <div id='jxgbox1' class='jxgbox mb-3' style='width:600px; height:400px;'></div>
+                    <script type='text/javascript'>
+                    var b = JXG.JSXGraph.initBoard('jxgbox1', {boundingbox: [-1, 4, 5, -1], axis: true});
+                    b.create('functiongraph', [function(x){return Math.log(2*x+1);},-1,5]);
+                    b.create('functiongraph', [function(x){return 2*x;},-1,5], {strokeColor:'#00ff00'});
+                    b.create('point', [0, 0]);
+                </script>
+        answers:
+        - y=2x
+        hints: |-
+            **Etape 1**: calculer la pente de la tangente :math:`a = f'(0)`
+
+            Il s'agit de la dérivée d'une composée de deux fonctions
+
+            .. math::
+
+                (u(v(x)))' = u'(v(x))v'(x)
+
+            **Etape 2**: calculer l'ordonnée à l'origine :math:`b`
+
+            .. math::
+
+                y = ax+b \Leftrightarrow f(0) = a.0 + b \Leftrightarrow f(0) = b
+        choices:
+        -   feedback: N'oubliez pas d'écrire une expression en fonction de :math:`x`
+                **et** de :math:`y`
+            answer: 2x
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

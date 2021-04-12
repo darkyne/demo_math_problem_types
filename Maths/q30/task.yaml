@@ -1,0 +1,39 @@
+accessible: true
+author: Manon Oreins,  Edmond Sahyoun
+categories: []
+contact_url: ''
+context: ''
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '8) Problèmes '
+network_grading: false
+order: 10
+problems:
+    q30:
+        answers:
+        - '63'
+        header: Il y a sept ans, un homme était six fois plus âgé que son fils. Aujourd’hui,
+            l’âge du père vaut le quart du carré de l’âge du fils. Sachant que le
+            père a maintenant plus de trente ans, quelle est aujourd’hui la somme
+            de leurs âges?
+        type: math
+        hints: |-
+            - Déterminer les inconnues
+            - Mettre en équation les deux situations
+            - Résoudre le système
+            - Répondre au problème initial
+        name: ''
+        error_message: |-
+            Si vous avez des difficultés avec cet exercice, cliquez sur le lien ci-dessous. Il vous redirigera vers le même exercice mais divisé en plusieurs étapes pour vous aider.
+
+            https://inginious.org/course/maths_demo/q30bis
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

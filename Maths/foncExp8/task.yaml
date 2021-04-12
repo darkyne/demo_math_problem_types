@@ -1,0 +1,78 @@
+accessible: true
+author: Victor Belpaire,Maxime Parmentier
+categories: []
+contact_url: ''
+context: |-
+    La fonction suivante possède-t-elle un maximum ? Si oui, quel est-il et quel est le point de maximum associé ?
+
+    .. math::
+        f : [0;1] \to \mathbb{R} : x \mapsto e^{3x}(x-1)^2
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '14) Fonctions exponentielles '
+network_grading: false
+order: 17
+problems:
+    q1:
+        limit: 0
+        header: |-
+            Cette fonction possède-t-elle un maximum ?
+
+            .. raw:: html
+
+                <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
+                <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
+        choices:
+        -   text: Oui
+            valid: true
+        -   text: Non
+        name: Existence
+        type: multiple_choice
+        success_message: |-
+            .. raw:: html
+
+                <div id='jxgbox1' class='jxgbox mb-3' style='width:600px; height:400px;'></div>
+                    <script type='text/javascript'>
+                    var b = JXG.JSXGraph.initBoard('jxgbox1', {boundingbox: [-1, 1.75, 2, -0.25], axis: true});
+                    b.create('functiongraph', [function(x){return Math.exp(3*x)*Math.pow(x-1,2);},0,1]);
+                    b.create('point', [1/3, 4*Math.E/9], {name:'Max'});
+                </script>
+    q2:
+        hints: |-
+            **Etape 1**: calculer la dérivée de :math:`f(x)`
+
+            Il s'agit de la dérivée d'un produit
+
+            .. math::
+
+                (u(x)v(x))' = u'(x)v(x) + u(x)v'(x)
+
+            **Etape 2**: trouver toutes les solutions de l'équation :math:`f'(x)=0`
+
+            Les solutions de cette équation sont les candidats pour être le point d'abscisse du maximum
+
+            **Etape 3**: vérifier que le(s) abscisse(s) qu'on a trouvé sont des maxima en vérifiant que la dérivée seconde soit négative en ce(s) point(s)
+        type: math
+        answers:
+        - \frac{4e}{9}
+        name: Valeur maximale
+        header: Si elle existe, calculer la valeur maximale de :math:`f`. Sinon entrer
+            :math:`\emptyset`.
+    q3:
+        type: math
+        name: Position du maximum
+        answers:
+        - \frac{1}{3}
+        hints: ''
+        header: Si il existe, Calculer l'abscisse du point de maximum. Sinon entrer
+            :math:`\emptyset`.
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

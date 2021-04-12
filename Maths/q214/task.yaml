@@ -1,0 +1,47 @@
+accessible: true
+author: Manon Oreins, Edmond Sahyuon
+categories: []
+contact_url: ''
+context: ''
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: '17) Probabilités et statistiques '
+network_grading: false
+order: 20
+problems:
+    q214:
+        header: |-
+            Des appartements sont à louer dans une certaine zone géographique.
+
+            Le tableau suivant donne le nombre d’appartements qui sont à louer pour un loyer donné, exprimé en euros.
+
+            Quel est le loyer moyen d’un appartement dans cette zone géographique ?
+
+            +------------------+-----------------------+
+            | Loyer            | Nombre d'appartements |
+            +------------------+-----------------------+
+            | 400              | 2                     |
+            +------------------+-----------------------+
+            | 500              | 3                     |
+            +------------------+-----------------------+
+            | 600              | 5                     |
+            +------------------+-----------------------+
+            | 700              | 1                     |
+            +------------------+-----------------------+
+            | 800              | 5                     |
+            +------------------+-----------------------+
+        name: ''
+        hints: ''
+        answers:
+        - '625'
+        type: math
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

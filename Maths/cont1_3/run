@@ -1,0 +1,40 @@
+#! /usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import sys
+sys.path.insert(1, '/course/common')
+
+from inginious import input, feedback, rst
+from parsingDomain import compareDomains
+
+correct = "]-4;2]\{0}"    # à modifier /!\
+correct2 = "{0}"          # à modifier /!\
+
+answer = input.get_input("q1")
+answer2 = input.get_input("q2")
+grade = 0
+
+result = compareDomains(answer, correct)
+result2 = compareDomains(answer2, correct2)
+
+if result[0]:
+    feedback.set_problem_result("success","q1")
+    feedback.set_problem_feedback("Bravo!","q1")
+    grade += 50
+else:
+    feedback.set_problem_result("failed","q1")
+    feedback.set_problem_feedback(result[1],"q1")
+
+if result2[0]:
+    feedback.set_problem_result("success","q2")
+    feedback.set_problem_feedback("Bravo!","q2")
+    grade += 50
+else:
+    feedback.set_problem_result("failed","q2")
+    feedback.set_problem_feedback(result2[1],"q2")
+
+feedback.set_grade(grade)
+if grade == 100 :
+    feedback.set_global_result("success")
+else :
+    feedback.set_global_result("failed")
