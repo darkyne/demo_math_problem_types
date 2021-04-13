@@ -32,7 +32,7 @@ problems:
             .. raw:: html
 
                <script>
-               var somme = 10000*parseInt(input["@random"][0] * 100);
+               var somme = 10000*parseInt(input["@random"][0] * 100 + 1);
                var plus2 = 1000*parseInt(input["@random"][1] * 100 + 1);
                var minus3 = 1000*parseInt(input["@random"][2] * 100 + 1);
                document.getElementById("ipr1").innerHTML = somme;
