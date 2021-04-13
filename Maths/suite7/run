@@ -5,7 +5,7 @@
 
 import re
 import math
-from sympy import sympify, simplify
+from sympy import sympify, simplify, Float
 from sympy.parsing.latex import parse_latex
 from inginious import input, feedback, rst
 
@@ -22,6 +22,8 @@ def parse_equation(latex_str):
     return parse_latex(latex_str)
 
 def is_equal(eq1, eq2):
+    if not (type(eq1) == Float):
+        feedback.set_problem_feedback("Mauvaise réponse. On attend une réponse numérique pas un calcul !","q1")
     return abs(simplify(eq1) - simplify(eq2)) < 0.05 or abs(simplify(sympify(str(eq1))) - simplify(sympify(str(eq2)))) < 0.05
 
 try:
