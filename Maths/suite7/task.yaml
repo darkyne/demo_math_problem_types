@@ -14,7 +14,7 @@ context: |-
             var h = 10*parseInt(input["@random"][0]*10+5);
             document.getElementById("p1").innerHTML = h;
         </script>
-environment_id: math
+environment_id: default
 environment_parameters:
     limits:
         time: '30'
@@ -31,6 +31,8 @@ network_grading: false
 order: 16
 problems:
     q1:
+        type: math
+        name: ''
         header: |-
             .. raw:: html
 
@@ -47,8 +49,6 @@ problems:
 
                 <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
                 <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
-        name: ''
-        type: math
         hints: |-
             La hauteur successive des rebonds évolue comme une suite géométrique de raison :math:`q` et de terme initial :math:`s_0`.
 

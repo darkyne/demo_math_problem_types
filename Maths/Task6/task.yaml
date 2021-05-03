@@ -1,0 +1,111 @@
+accessible: true
+author: ''
+categories: []
+contact_url: ''
+context: |
+    Voici quelques exemples utilisant les sets discrets.
+    Les sets discrets peuvent être encodés au format explicite {1,2,3} ou au format implicite {x|x<4|N}.
+
+    Seul le format explicit permet les unions et intersections.
+    Le format implicite, parcontre, permet d'ajouter autant de conditions que nécessaires.
+
+    Le format à utiliser est sélectionné par le professeur et visible pour l'étudiant via l'exemple de format affiché.
+
+    Dans le cas de sets implicites, il est conseillé de mentionner le domaine dans l'énoncé.
+environment_id: mcq
+environment_parameters: {}
+environment_type: mcq
+evaluate: best
+file: ''
+groups: false
+input_random: '0'
+name: Math-sets
+network_grading: false
+problems:
+    Set1:
+        type: math_set
+        name: Set 1
+        header: |-
+            Donne, de façon explicite, l'ensemble des naturels x tels que x²<25.
+            Pour rappel, les naturels sont les entiers positifs, commençant à 1.
+        hints: 'Solution: {1,2,3,4}'
+        set_type: explicit
+        answers:
+        - \left\{1,2,3,4\right\}
+    Set2:
+        type: math_set
+        name: Set 2
+        header: |-
+            Quel est l'ensemble des naturels x tels que x²>25 et x³<100000 ?
+
+            Exprime la solution au format implicite.
+        hints: 'Solution: {x|(x²>25)&(x³<100000)|N}'
+        set_type: implicit
+        answers:
+        - \left\{x\right|\left(x^2>25\right)\&\left(x^3<100000\right)\left|N\right\}
+    Set3:
+        type: math_set
+        name: Set 3
+        header: |-
+            Toto, Jojo et Lolo font un trio de laborantins débutants.
+
+            Toto a réalisé une expérience et dispose d'un set de valeurs mesurées.
+            Jojo a réalisé la même expérience et voudrait comparer ses résultats avec Toto.
+
+            Soit {T} l'ensemble des valeurs mesurées par Toto.
+            Soit {J} l'ensemble des valeurs mesurées par Jojo.
+
+            Jojo voudrait savoir quelles sont les valeurs mesurées qui correspondent parfaitement entre leurs deux jeux de mesures.
+
+            Quel est cet ensemble?
+        hints: 'Solution: {J}∩{T}'
+        set_type: explicit
+        answers:
+        - \left\{J\right\}\cap\left\{T\right\}
+    Set4:
+        type: math_set
+        name: Set 4
+        header: |-
+            Jojo voudrait maintenant savoir, si lui et Toto mettaient leurs jeux de mesures ensemble, ce que cela donnerait.
+
+            Quel est cet ensemble ?
+        hints: ''
+        set_type: explicit
+        answers:
+        - \left\{J\right\}\cup\left\{T\right\}
+    Set5:
+        type: math_set
+        name: Set 5
+        header: |
+            Toto devant s'absenter, Jojo compare finalement son jeu de mesures avec Lolo.
+            Malheureusement, il a du mal à comprendre ce que Lolo a fait !
+
+            En effet, voici les mesures de Jojo: {-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9}
+            Et voici ce que Lolo avait noté pour ses propres mesures: :math:`\{x|x^2\leq49|Z\}`
+
+            Jojo qui a du mal à comprendre cette notation, voudrait exprimer de façon explicite les mesures de Lolo.
+            Quel est cet ensemble de mesures ?
+        hints: 'Solution: {-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7}'
+        set_type: explicit
+        answers:
+        - \left\{-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7\right\}
+    Set6:
+        type: math_set
+        name: Set 6
+        header: |-
+            Jojo, après avoir comparé ses mesures avec Lolo, se rend compte qu'il dispose de plus de mesures que son collègue...
+            C'est sûrement Lolo qui a oublié certaines mesures!
+
+            Il se souvient soudain que ses promoteurs adorent les notations succintes.
+            Il repense alors à la notation que Lolo avait utilisée et veut utiliser exactement la même synthaxe...
+
+            Aide Jojo à écrire ses mesures de façon succinte, exactement comme Lolo l'avait fait.
+        hints: 'Solution: :math:`\{x|x^2\leq81|Z\}`'
+        set_type: implicit
+        answers:
+        - \left\{x\right|x^2\le81\left|Z\right\}
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

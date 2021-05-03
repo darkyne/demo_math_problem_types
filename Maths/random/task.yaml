@@ -3,13 +3,13 @@ author: ''
 categories: []
 contact_url: ''
 context: Paramètres random
-environment_id: math
+environment_id: default
 environment_parameters:
-    run_cmd: ''
     limits:
-        memory: '100'
         time: '30'
         hard_time: ''
+        memory: '100'
+    run_cmd: ''
 environment_type: docker
 evaluate: best
 file: ''
@@ -17,11 +17,11 @@ groups: false
 input_random: '3'
 name: 5) Equation du premier degré
 network_grading: false
+order: 7
 problems:
     math1:
-        default: ''
-        name: ''
         type: code_single_line
+        name: ''
         header: |-
             .. raw:: html
 
@@ -40,9 +40,9 @@ problems:
                document.getElementById("ipr3").innerHTML = minus3;
 
                </script>
+        default: ''
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
 weight: 1.0
-order: 7

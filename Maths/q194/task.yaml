@@ -15,12 +15,8 @@ network_grading: false
 order: 19
 problems:
     q194:
-        choices:
-        -   text: elle admet un maximum en :math:`x=1`
-        -   text: elle est strictement positive sur :math:`]1,2[` .
-        -   text: elle est croissante sur :math:`]0,1[`
-        -   text: elle est croissante sur :math:`]1,2[`
-            valid: true
+        type: multiple_choice
+        name: ''
         header: |-
             Soit :math:`f` une fonction définie sur :math:`\mathbb{R}` dont la dérivée :math:`f'` est représentée par le graphique suivant
 
@@ -38,8 +34,12 @@ problems:
               </script>
               </center>
         limit: 0
-        type: multiple_choice
-        name: ''
+        choices:
+        -   text: elle admet un maximum en :math:`x=1`
+        -   text: elle est strictement positive sur :math:`]1,2[` .
+        -   text: elle est croissante sur :math:`]0,1[`
+        -   text: elle est croissante sur :math:`]1,2[`
+            valid: true
 stored_submissions: 0
 submission_limit:
     amount: -1

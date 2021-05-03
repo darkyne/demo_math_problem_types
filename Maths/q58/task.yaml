@@ -15,11 +15,8 @@ network_grading: false
 order: 12
 problems:
     q58:
-        hints: '- Utiliser la substitution et/ou la combinaison pour résoudre le systême'
-        name: ''
         type: math
-        answers:
-        - '4'
+        name: ''
         header: |-
             Soient :math:`x` et :math:`y` les deux nombres réels satisfaisant
 
@@ -30,6 +27,9 @@ problems:
                         \end{cases}
 
             Que vaut :math:`x-2y` ?
+        hints: '- Utiliser la substitution et/ou la combinaison pour résoudre le systême'
+        answers:
+        - '4'
 stored_submissions: 0
 submission_limit:
     amount: -1

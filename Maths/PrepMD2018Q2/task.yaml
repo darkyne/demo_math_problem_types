@@ -1,4 +1,4 @@
-accessible: true
+accessible: /2021-04-26 14:00:00/2021-04-26 14:00:00
 author: ''
 categories: []
 contact_url: ''
@@ -12,8 +12,23 @@ groups: false
 input_random: '0'
 name: 1) Discriminant
 network_grading: false
+order: 0
 problems:
     PrepMD2018q31:
+        type: math
+        name: ''
+        header: |-
+            Quel est l'ensemble des réels :math:`m` tels que l'équation
+
+            .. math::
+                     (m-3)x^2-2x+2=0
+
+
+            admette exactement deux racines distinctes?
+
+
+            La réponse est attendue sous forme d'inégalité. Par exemple: :math:`x \leq 5` .
+        hints: ''
         error_message: |-
             Etapes de résolution:
 
@@ -47,23 +62,10 @@ problems:
 
             Plus d'informations:
             https://fr.khanacademy.org/math/algebra/quadratics/solving-quadratics-using-the-quadratic-formula/a/discriminant-review
-        answer: m<\frac{7}{2}
-        name: ''
-        header: |-
-            Quel est l'ensemble des réels :math:`m` tels que l'équation
-
-            .. math::
-                     (m-3)x^2-2x+2=0
-
-
-            admette exactement deux racines distinctes?
-
-
-            La réponse est attendue sous forme d'inégalité. Par exemple: :math:`x \leq 5` .
-        type: math
+        answers:
+        - m<\frac{7}{2}
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
 weight: 1.0
-order: 0

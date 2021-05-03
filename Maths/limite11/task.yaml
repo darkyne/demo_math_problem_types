@@ -1,4 +1,4 @@
-accessible: true
+accessible: /2021-04-27 14:00:00/2021-04-27 14:00:00
 author: Victor Belpaire,Maxime Parmentier
 categories: []
 contact_url: ''
@@ -35,6 +35,8 @@ network_grading: false
 order: 15
 problems:
     q1:
+        type: math
+        name: ''
         header: |-
             Calculer
 
@@ -43,16 +45,11 @@ problems:
                 \lim_{x\to-4} f(x)
 
             Si la limite n'existe pas, entrer :math:`\emptyset`.
-        name: ''
-        type: math
+        hints: ''
         answers:
         - '1'
-        hints: ''
     q2:
-        hints: ''
         type: math
-        answers:
-        - '2'
         name: ''
         header: |-
             Calculer
@@ -62,13 +59,12 @@ problems:
                 \lim_{x\to-3} f(x)
 
             Si la limite n'existe pas, entrer :math:`\emptyset`.
+        hints: ''
+        answers:
+        - '2'
     q3:
         type: math
         name: ''
-        answers:
-        - \varnothing
-        hints: Si en un point la limite à gauche est différente de la limite à droite
-            alors la limite n'existe pas en ce point.
         header: |-
             Calculer
 
@@ -77,12 +73,13 @@ problems:
                 \lim_{x\to0} f(x)
 
             Si la limite n'existe pas, entrer :math:`\emptyset`.
-    q4:
+        hints: Si en un point la limite à gauche est différente de la limite à droite
+            alors la limite n'existe pas en ce point.
         answers:
-        - -\infty
-        name: ''
-        hints: ''
+        - \varnothing
+    q4:
         type: math
+        name: ''
         header: |-
             Calculer
 
@@ -91,12 +88,12 @@ problems:
                 \lim_{x\to2} f(x)
 
             Si la limite n'existe pas, entrer :math:`\emptyset`.
-    q5:
-        name: ''
         hints: ''
         answers:
-        - '3'
+        - -\infty
+    q5:
         type: math
+        name: ''
         header: |-
             Calculer
 
@@ -105,6 +102,9 @@ problems:
                 \lim_{x\to4} f(x)
 
             Si la limite n'existe pas, entrer :math:`\emptyset`.
+        hints: ''
+        answers:
+        - '3'
 stored_submissions: 0
 submission_limit:
     amount: -1

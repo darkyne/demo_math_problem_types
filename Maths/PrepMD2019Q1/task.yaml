@@ -12,8 +12,11 @@ groups: false
 input_random: '0'
 name: 4) Mise en équation
 network_grading: false
+order: 5
 problems:
     PrepMD2019q12:
+        type: math
+        name: ''
         header: |-
             Dans le pay P, il y a deux types de médecins: ceux qui sont conventionnées et ceux qui ne le sont pas.
 
@@ -24,6 +27,7 @@ problems:
             Quels sont les honoraires d'un médecin non conventionné?
 
             Réponse attendue en euros (sans le symbole).
+        hints: ''
         error_message: |-
             Malheureusement, la réponse n'est pas correcte.
 
@@ -133,12 +137,10 @@ problems:
             .. math::
                                 y=16+2m
                                 y=16+32=48
-        type: math
-        name: ''
-        answer: '48'
+        answers:
+        - '48'
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
 weight: 1.0
-order: 5

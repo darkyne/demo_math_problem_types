@@ -15,6 +15,8 @@ network_grading: false
 order: 18
 problems:
     q1:
+        type: math
+        name: Tangente au graphe
         header: |-
             Donner l'équation cartésienne de la tangente au graphe de la fonction :math:`f` donnée ci-dessous au point d'abscisse :math:`x=0`.
 
@@ -28,20 +30,6 @@ problems:
 
                 <script type="text/javascript" charset="UTF-8" src="//jsxgraph.org/distrib/jsxgraphcore.js"></script>
                 <link rel="stylesheet" type="text/css" href="//jsxgraph.org/distrib/jsxgraph.css" />
-        name: Tangente au graphe
-        type: math
-        success_message: |-
-            .. raw:: html
-
-                <div id='jxgbox1' class='jxgbox mb-3' style='width:600px; height:400px;'></div>
-                    <script type='text/javascript'>
-                    var b = JXG.JSXGraph.initBoard('jxgbox1', {boundingbox: [-1, 4, 5, -1], axis: true});
-                    b.create('functiongraph', [function(x){return Math.log(2*x+1);},-1,5]);
-                    b.create('functiongraph', [function(x){return 2*x;},-1,5], {strokeColor:'#00ff00'});
-                    b.create('point', [0, 0]);
-                </script>
-        answers:
-        - y=2x
         hints: |-
             **Etape 1**: calculer la pente de la tangente :math:`a = f'(0)`
 
@@ -56,10 +44,22 @@ problems:
             .. math::
 
                 y = ax+b \Leftrightarrow f(0) = a.0 + b \Leftrightarrow f(0) = b
+        success_message: |-
+            .. raw:: html
+
+                <div id='jxgbox1' class='jxgbox mb-3' style='width:600px; height:400px;'></div>
+                    <script type='text/javascript'>
+                    var b = JXG.JSXGraph.initBoard('jxgbox1', {boundingbox: [-1, 4, 5, -1], axis: true});
+                    b.create('functiongraph', [function(x){return Math.log(2*x+1);},-1,5]);
+                    b.create('functiongraph', [function(x){return 2*x;},-1,5], {strokeColor:'#00ff00'});
+                    b.create('point', [0, 0]);
+                </script>
+        answers:
+        - y=2x
         choices:
-        -   feedback: N'oubliez pas d'écrire une expression en fonction de :math:`x`
+        -   answer: 2x
+            feedback: N'oubliez pas d'écrire une expression en fonction de :math:`x`
                 **et** de :math:`y`
-            answer: 2x
 stored_submissions: 0
 submission_limit:
     amount: -1

@@ -90,6 +90,13 @@ problems:
         hints: 'Solution: :math:`[-\sqrt{3},0,\sqrt{3}]`'
         answers:
         - -\sqrt{3},0,\sqrt{3}
+    Math8:
+        type: math
+        name: ''
+        header: Test
+        hints: ''
+        answers:
+        - 2x
 stored_submissions: 0
 submission_limit:
     amount: -1
